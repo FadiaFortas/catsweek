@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&family=Titillium+Web:ital,wght@0,600;1,600&display=swap');
+
+
+
+h1 {
+  font-style: italic;
+  color: #ee6c4d;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+
+}
+#view {
+  font-style: italic;
+  text-align: center;
+  font-size: 180%;
+  color: #293241;
+  font-family: "Space Grotesk", sans-serif;
+}
+.image-container {
+  text-align: center;
+}
