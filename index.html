@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      Welcome to Fadianimals Land
+    </h1>
+    <p id = "view">
+      Click to view more!
+    </p>
+    <div class="image-container" onclick="image_switch()">
+      <img
+        id="first"
+        src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80"
+        width="40%"
+        height="40%"
+      />
+    </div>
+  </body>
+  <script>
+    var pics = [
+      "https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=801&q=80",
+      "https://images.unsplash.com/photo-1548676924-48e71ceac151?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80",
+      "https://images.unsplash.com/photo-1567170566706-e2d2db258886?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+      "https://images.unsplash.com/photo-1492361427125-2b30aa41dbd3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80"
+    ];
+    var i = 0;
+    function image_switch() {
+      var L = pics.length;
+      if (i < L - 1) {
+        i = i + 1;
+      } else {
+        i = 0;
+      }
+
+      document.getElementById("first").src = pics[i];
+    }
+  </script>
+</html>
